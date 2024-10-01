@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body class="bg-slate-100 h-full w-full overflow-x-hidden">
+    <header class="py-2 bg-gray-600">
+      <div class="mx-2 flex items-center justify-between">
+        <img src="./logo.png" alt="logo" class="h-16 p-0" />
+        <div class="flex items-center justify-center">
+          <ul class="flex gap-6 text-white mr-4">
+            <li class="cursor-pointer hover:text-slate-300">Home</li>
+            <li class="cursor-pointer hover:text-slate-300">Deepdive</li>
+            <li class="cursor-pointer hover:text-slate-300">Report</li>
+          </ul>
+          <img src="./filter.png" alt="filter" class="text-white h-6" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="flex gap-4 sm:items-center flex-col sm:flex-row">
+        <div class="flex gap-4 flex-col sm:flex-row">
+          <div
+            class="bg-sky-500 w-fit px-4 py-2 rounded-lg text-white shadow-sm"
+          >
+            Select Dimension
+          </div>
+          <select
+            id="countries"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-fit p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 shadow-sm"
+          >
+            <option selected>Choose a country</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+          </select>
+        </div>
+        <div class="flex items-center">
+          <label for="" class="text-sm font-bold">
+            Data as on 09/01/2023 to 12/10/2024
+          </label>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 mt-5">
+        <div class="border bg-white h-32 rounded-lg"></div>
+        <div class="border bg-white h-32 rounded-lg"></div>
+        <div class="border bg-white h-32 rounded-lg"></div>
+        <div class="border bg-white h-32 rounded-lg"></div>
+        <div class="border bg-white h-32 rounded-lg"></div>
+      </div>
+    </main>
+  </body>
+</html>
